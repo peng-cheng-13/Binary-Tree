@@ -1,0 +1,6 @@
+#!/bin/bash
+g++ -std=c++11 write.cc -I/BIGDATA/nsccgz_pcheng_1/install/libtdms/include -I/usr/software/java/jdk1.8.0_121/include/ -I/usr/software/java/jdk1.8.0_121/include/linux -L/BIGDATA/nsccgz_pcheng_1/install/libtdms/lib -lalluxio -o createfile
+g++ -std=c++11 binary.cc -I/BIGDATA/nsccgz_pcheng_1/install/libtdms/include -I/usr/software/java/jdk1.8.0_121/include/ -I/usr/software/java/jdk1.8.0_121/include/linux -L/BIGDATA/nsccgz_pcheng_1/install/libtdms/lib -lalluxio -o binary
+g++ -std=c++11 process.cc -I/BIGDATA/nsccgz_pcheng_1/install/libtdms/include -I/usr/software/java/jdk1.8.0_121/include/ -I/usr/software/java/jdk1.8.0_121/include/linux -L/BIGDATA/nsccgz_pcheng_1/install/libtdms/lib -lalluxio -o process
+g++ -std=c++11 reduce.cc -I/BIGDATA/nsccgz_pcheng_1/install/libtdms/include -I/usr/software/java/jdk1.8.0_121/include/ -I/usr/software/java/jdk1.8.0_121/include/linux -L/BIGDATA/nsccgz_pcheng_1/install/libtdms/lib -lalluxio -o reduce
+g++ -std=c++11 gather.cc -I/BIGDATA/nsccgz_pcheng_1/install/libtdms/include -I/usr/software/java/jdk1.8.0_121/include/ -I/usr/software/java/jdk1.8.0_121/include/linux -L/BIGDATA/nsccgz_pcheng_1/install/libtdms/lib -lalluxio -o gdata

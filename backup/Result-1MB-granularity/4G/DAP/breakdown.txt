@@ -1,0 +1,37 @@
+
+# Transformation - name of the transformation.
+# Count          - the number of times the invocations corresponding to
+#                  the transformation was executed.
+# Succeeded      - the count of the succeeded invocations corresponding
+#                  to the transformation.
+# Failed         - the count of the failed invocations corresponding to
+#                  the transformation.
+# Min(sec)       - the minimum invocation runtime value corresponding
+#                  to the transformation.
+# Max(sec)       - the maximum invocation runtime value corresponding
+#                  to the transformation.
+# Mean(sec)      - the mean of the invocation runtime corresponding
+#                  to the transformation.
+# Total(sec)     - the cumulative of invocation runtime corresponding
+#                  to the transformation.
+
+# 205375e5-76c9-40dc-b507-251da6b4e942 (binary-tree)
+Transformation           Count     Succeeded Failed  Min       Max       Mean       Total     
+binary                   30        30        0       7.194     9.628     8.356      250.677   
+createfile               1         1         0       7.155     7.155     7.155      7.155     
+dagman::post             112       112       0       0.0       1.0       0.25       28.0      
+pegasus::dirmanager      1         1         0       3.203     3.203     3.203      3.203     
+pegasus::transfer        1         1         0       2.228     2.228     2.228      2.228     
+process                  64        64        0       8.0       15.538    9.8        627.218   
+reduce                   15        15        0       1.094     1.236     1.129      16.938    
+
+
+# All (All)
+Transformation           Count     Succeeded Failed  Min       Max       Mean       Total     
+binary                   30        30        0       7.194     9.628     8.356      250.677   
+createfile               1         1         0       7.155     7.155     7.155      7.155     
+dagman::post             112       112       0       0.0       1.0       0.25       28.0      
+pegasus::dirmanager      1         1         0       3.203     3.203     3.203      3.203     
+pegasus::transfer        1         1         0       2.228     2.228     2.228      2.228     
+process                  64        64        0       8.0       15.538    9.8        627.218   
+reduce                   15        15        0       1.094     1.236     1.129      16.938    

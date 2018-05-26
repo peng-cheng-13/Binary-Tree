@@ -1,0 +1,56 @@
+#!/bin/bash
+
+set -e
+
+    # Set environments
+    export PYTHONPATH=`pegasus-config --python`
+    export RUN_ID=Binary-Tree-`date +'%s'`
+    export INTER_DIR=/home/condor/alluxio-data/workflows/$RUN_ID
+    #export INTER_DIR=/BIGDATA/nsccgz_pcheng_1/workflows/$RUN_ID
+    export RUN_DIR=/BIGDATA/nsccgz_pcheng_1/workflows/$RUN_ID
+    #base_dir, the home dir of Binary-tree workflow
+    BASE_DIR=`pwd`
+
+    #tool_dir, the dir that contains the task files written in different langerages(POSIX , JAVA, C)
+    #TOOL_DIR=tools-POSIX
+    TOOL_DIR=tools-C-JNI
+    #TOOL_DIR=tools-C-JNI/DAP
+    
+    #depth, the depth of Binary-tree workflow, the minimum depth is 2 
+    DEPTH=5
+    #data size, the data size(MB) that produced by each job 
+    export DATA_SIZE=7168
+
+
+
+    # generate the dax
+    #./generate-dax $RUN_ID  $BASE_DIR $TOOL_DIR $DEPTH
+    ./generate-dax-da $RUN_ID  $BASE_DIR $TOOL_DIR $DEPTH
+
+    #create scratch dir
+    mkdir -p $RUN_DIR/outputs
+    mkdir -p $RUN_DIR/workflow/$RUN_ID
+    mkdir  $INTER_DIR
+    mkdir  $INTER_DIR/scratch
+    mkdir $INTER_DIR/scratch/$RUN_ID
+ 
+  
+    # create tar dir 
+    mkdir -p $RUN_DIR/interdata/$RUN_ID
+    chmod -R 777 $RUN_DIR
+     
+
+    # plan and submit the  workflow
+    echo
+    pegasus-plan \
+        --conf pegasus.properties \
+        --relative-dir $RUN_ID \
+	--output-site condorpool \
+        --staging-site condorpool \
+	--sites condorpool \
+        --cleanup none \
+        --dir $RUN_DIR/workflow \
+        --dax dag.xml \
+        --submit
+
+

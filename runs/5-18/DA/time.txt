@@ -1,0 +1,37 @@
+
+# Job instance statistics per day:
+#   the number of job instances run, total runtime sorted by day
+# Invocation statistics per day:
+#   the number of invocations , total runtime sorted by day
+# Job instance statistics by host per day:
+#   the number of job instance run, total runtime on each host sorted by day
+# Invocation by host per day:
+#   the number of invocations, total runtime on each host sorted by day
+
+# Job instances statistics per day
+Date[YYYY-MM-DD]              Count               Runtime (sec)       
+2018-05-18                    126                 968.0               
+
+# Invocation statistics run per day
+Date[YYYY-MM-DD]              Count               Runtime (sec)       
+2018-05-18                    242                 939.588             
+
+# Job instances statistics on host per day
+Date[YYYY-MM-DD]       Host                     Count     Runtime (sec)       
+2018-05-18             cn17635-ens4             12        112.0               
+2018-05-18             cn17636-enp5s0           21        170.0               
+2018-05-18             cn17637-ens4             19        145.0               
+2018-05-18             cn17639-ens4             18        139.0               
+2018-05-18             cn17640-enp5s0           17        154.0               
+2018-05-18             cn17644-enp5s0           28        176.0               
+2018-05-18             cn17662-enp5s0           11        72.0                
+
+# Invocation statistics on host per day
+Date[YYYY-MM-DD]       Host                     Count     Runtime (sec)       
+2018-05-18             cn17635-ens4             24        115.163             
+2018-05-18             cn17636-enp5s0           40        161.924             
+2018-05-18             cn17637-ens4             34        138.038             
+2018-05-18             cn17639-ens4             34        136.606             
+2018-05-18             cn17640-enp5s0           34        157.766             
+2018-05-18             cn17644-enp5s0           54        161.161             
+2018-05-18             cn17662-enp5s0           22        68.93               

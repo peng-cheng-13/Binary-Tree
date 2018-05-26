@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitecatalog xmlns="http://pegasus.isi.edu/schema/sitecatalog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pegasus.isi.edu/schema/sitecatalog http://pegasus.isi.edu/schema/sc-4.1.xsd" version="4.1">
+
+    <!-- The local site contains information about the submit host -->
+    <site handle="local" arch="x86_64" os="LINUX">
+        <!-- This is where intermediate data will be stored -->
+
+	<directory type="shared-scratch" path="${INTER_DIR}/scratch">
+            <file-server operation="all" url="file://${INTER_DIR}/scratch"/>
+        </directory>
+
+       
+        <!-- This is where output data will be stored -->
+	 <directory type="local-storage" path="${RUN_DIR}/outputs">
+            <file-server operation="all" url="file://${RUN_DIR}/outputs"/>
+        </directory>
+
+    </site>
+
+    <site handle="condorpool" arch="x86_64" os="LINUX">
+        <!-- These profiles tell Pegasus that the site is a plain Condor pool -->
+        <profile namespace="pegasus" key="style">condor</profile>
+        <profile namespace="condor" key="universe">vanilla</profile>
+        <directory type="shared-scratch" path="${INTER_DIR}/scratch">
+            <file-server operation="all" url="file://${INTER_DIR}/scratch"/>
+        </directory>
+	
+	<directory type="local-storage" path="${RUN_DIR}/outputs">
+            <file-server operation="all" url="file://${RUN_DIR}/outputs"/>
+        </directory>
+       <!-- This profile tells Pegasus to create two clustered jobs
+            per level of the workflow, when horizontal clustering is
+            enabled -->
+	<!--profile namespace="condor" key="JobMachineAttrs">cn17644-enp5s0</profile-->
+	<!--profile namespace="condor" key="DataAware">true</profile-->
+        <profile namespace="pegasus" key="style">condor</profile>
+        <profile namespace="pegasus" key="group">condor</profile>
+        <profile namespace="condor" key="universe">vanilla</profile>
+	<profile namespace="condor" key="should_transfer_files">No</profile>
+	<profile namespace="condor" key="rank" >(machine =?= JobMachineAttrs)*10</profile>
+	<!--profile namespace="dagman" key="DAGMAN_HOLD_CLAIM_TIME" >0</profile-->
+	<!--profile namespace="condor" key="requirements" >TARGET.FileSystemDomain == "Lustre"</profile-->
+        <profile namespace="env" key="PEGASUS_HOME" >/home/condor/pegasus-4.7.4</profile>
+ 	<profile namespace="env" key="LD_LIBRARY_PATH" >/BIGDATA/nsccgz_pcheng_1/install/libtdms/lib</profile>     
+        <profile namespace="env" key="CLASSPATH" >/BIGDATA/nsccgz_pcheng_1/install/libtdms/lib:/home/condor/alluxio/core/client/runtime/target/alluxio-core-client-runtime-1.6.1-jar-with-dependencies.jar:/home/condor/alluxio/core/server/worker/target/alluxio-core-server-worker-1.6.1.jar:/home/condor/alluxio/core/server/common/target/alluxio-core-server-common-1.6.1.jar</profile>
+
+
+    </site>
+
+
+</sitecatalog>

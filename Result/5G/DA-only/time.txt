@@ -1,0 +1,59 @@
+
+# Job instance statistics per day:
+#   the number of job instances run, total runtime sorted by day
+# Invocation statistics per day:
+#   the number of invocations , total runtime sorted by day
+# Job instance statistics by host per day:
+#   the number of job instance run, total runtime on each host sorted by day
+# Invocation by host per day:
+#   the number of invocations, total runtime on each host sorted by day
+
+# Job instances statistics per day
+Date[YYYY-MM-DD]              Count               Runtime (sec)       
+2018-05-25                    106                 1383.0              
+
+# Invocation statistics run per day
+Date[YYYY-MM-DD]              Count               Runtime (sec)       
+2018-05-25                    212                 1393.371            
+
+# Job instances statistics on host per day
+Date[YYYY-MM-DD]       Host                     Count     Runtime (sec)       
+2018-05-25             cn17635-ens4             2         28.0                
+2018-05-25             cn17636-enp5s0           6         78.0                
+2018-05-25             cn17637-ens4             2         30.0                
+2018-05-25             cn17639-ens4             4         58.0                
+2018-05-25             cn17640-enp5s0           3         37.0                
+2018-05-25             cn17642-enp5s0           2         22.0                
+2018-05-25             cn17644-enp5s0           4         55.0                
+2018-05-25             cn17645-ens4             8         97.0                
+2018-05-25             cn17647-ens4             3         40.0                
+2018-05-25             cn17648-enp5s0           4         52.0                
+2018-05-25             cn17651-ens4             7         105.0               
+2018-05-25             cn17653-ens4             6         95.0                
+2018-05-25             cn17655-ens4             4         52.0                
+2018-05-25             cn17656-enp5s0           11        116.0               
+2018-05-25             cn17658-enp5s0           4         50.0                
+2018-05-25             cn17660-enp5s0           19        246.0               
+2018-05-25             cn17661-ens4             11        111.0               
+2018-05-25             cn17662-enp5s0           6         111.0               
+
+# Invocation statistics on host per day
+Date[YYYY-MM-DD]       Host                     Count     Runtime (sec)       
+2018-05-25             cn17635-ens4             4         25.657              
+2018-05-25             cn17636-enp5s0           12        79.819              
+2018-05-25             cn17637-ens4             4         32.053              
+2018-05-25             cn17639-ens4             8         58.105              
+2018-05-25             cn17640-enp5s0           6         36.768              
+2018-05-25             cn17642-enp5s0           4         22.48               
+2018-05-25             cn17644-enp5s0           8         57.179              
+2018-05-25             cn17645-ens4             16        97.788              
+2018-05-25             cn17647-ens4             6         40.147              
+2018-05-25             cn17648-enp5s0           8         52.725              
+2018-05-25             cn17651-ens4             14        104.355             
+2018-05-25             cn17653-ens4             12        97.835              
+2018-05-25             cn17655-ens4             8         51.969              
+2018-05-25             cn17656-enp5s0           22        117.878             
+2018-05-25             cn17658-enp5s0           8         49.245              
+2018-05-25             cn17660-enp5s0           38        247.617             
+2018-05-25             cn17661-ens4             22        109.047             
+2018-05-25             cn17662-enp5s0           12        112.704             

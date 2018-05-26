@@ -1,0 +1,3 @@
+#!/bin/bash
+ls . | grep merged | tee $1
+/BIGDATA/nsccgz_pcheng_1/Binary-Tree/tools-C-JNI/DAP/gdata $1 $2 $3

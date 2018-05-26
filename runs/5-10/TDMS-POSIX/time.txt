@@ -1,0 +1,39 @@
+
+# Job instance statistics per day:
+#   the number of job instances run, total runtime sorted by day
+# Invocation statistics per day:
+#   the number of invocations , total runtime sorted by day
+# Job instance statistics by host per day:
+#   the number of job instance run, total runtime on each host sorted by day
+# Invocation by host per day:
+#   the number of invocations, total runtime on each host sorted by day
+
+# Job instances statistics per day
+Date[YYYY-MM-DD]              Count               Runtime (sec)       
+2018-05-10                    81                  510.0               
+
+# Invocation statistics run per day
+Date[YYYY-MM-DD]              Count               Runtime (sec)       
+2018-05-10                    162                 509.564             
+
+# Job instances statistics on host per day
+Date[YYYY-MM-DD]       Host                     Count     Runtime (sec)       
+2018-05-10             cn17639-ens4             9         75.0                
+2018-05-10             cn17641-ens4             9         48.0                
+2018-05-10             cn17643-ens4             17        138.0               
+2018-05-10             cn17645-ens4             10        30.0                
+2018-05-10             cn17651-ens4             7         48.0                
+2018-05-10             cn17652-enp5s0           6         28.0                
+2018-05-10             cn17655-ens4             9         74.0                
+2018-05-10             cn17658-enp5s0           14        69.0                
+
+# Invocation statistics on host per day
+Date[YYYY-MM-DD]       Host                     Count     Runtime (sec)       
+2018-05-10             cn17639-ens4             18        75.986              
+2018-05-10             cn17641-ens4             18        50.396              
+2018-05-10             cn17643-ens4             34        138.189             
+2018-05-10             cn17645-ens4             20        29.923              
+2018-05-10             cn17651-ens4             14        45.444              
+2018-05-10             cn17652-enp5s0           12        26.213              
+2018-05-10             cn17655-ens4             18        74.172              
+2018-05-10             cn17658-enp5s0           28        69.241              

@@ -1,0 +1,3 @@
+#!/bin/bash
+g++ -std=c++11 write.cc -I/BIGDATA/nsccgz_pcheng_1/install/libtdms/include -I/usr/software/java/jdk1.8.0_121/include/ -I/usr/software/java/jdk1.8.0_121/include/linux -L/BIGDATA/nsccgz_pcheng_1/install/libtdms/lib -lalluxio -o createfile
+

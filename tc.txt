@@ -1,0 +1,7 @@
+tr createfile {
+    site local {
+        pfn "/BIGDATA/nsccgz_pcheng_1/Binary-Tree/tools-POSIX/createfile"
+        arch "x86_64"
+        os "LINUX"
+    }
+}

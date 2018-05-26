@@ -1,0 +1,133 @@
+
+# Job            - name of the job
+# Try            - number representing the job instance run count
+# Site           - site where the job ran
+# Kickstart      - actual duration of the job instance in seconds on the
+#                  remote compute node
+# Mult           - multiplier factor specified by the user
+# Kickstart-Mult - Kickstart time multiplied by the multiplier factor
+# CPU-Time       - remote cpu time computed as the stime + utime
+# Post           - postscript time as reported by DAGMan
+# CondorQTime    - time between submission by DAGMan and the remote Grid
+#                  submission. It is an estimate of the time spent in the
+#                  condor q on the submit node
+# Resource       - time between the remote Grid submission and start of
+#                  remote execution. It is an estimate of the time job
+#                  spent in the remote queue
+# Runtime        - time spent on the resource as seen by Condor DAGMan.
+#                  Is always >= Kickstart
+# Seqexec        - time taken for the completion of a clustered job
+# Seqexec-Delay  - time difference between the time for the completion
+#                  of a clustered job and sum of all the individual
+#                  tasks Kickstart time
+# Exitcode       - exitcode for this job
+# Hostname       - name of the host where the job ran, as reported by
+#                  Kickstart
+# 4075cb62-db83-4480-aa42-9d99d8be7705 (binary-tree)
+Job                                 Try Site       Kickstart Mult Kickstart-Mult CPU-Time Post CondorQTime Resource Runtime Seqexec Seqexec-Delay Exitcode Hostname       
+create_dir_binary-tree_0_condorpool 1   condorpool 3.2       1    3.2            0.156    1.0  19.0        -        3.0     -       -             0        cn17660-enp5s0 
+createfile_ID0000001                1   condorpool 2.808     1    2.808          5.997    0.0  3.0         -        3.0     -       -             0        cn17660-enp5s0 
+binary_ID0000003                    1   condorpool 3.92      1    3.92           11.054   0.0  3.0         -        4.0     -       -             0        cn17660-enp5s0 
+binary_ID0000002                    1   condorpool 2.505     1    2.505          10.286   0.0  3.0         -        3.0     -       -             0        cn17660-enp5s0 
+binary_ID0000007                    1   condorpool 3.36      1    3.36           10.801   0.0  4.0         -        3.0     -       -             0        cn17660-enp5s0 
+binary_ID0000005                    1   condorpool 3.018     1    3.018          9.94     0.0  4.0         -        4.0     -       -             0        cn17660-enp5s0 
+binary_ID0000006                    1   condorpool 3.115     1    3.115          10.026   0.0  3.0         -        3.0     -       -             0        cn17661-ens4   
+binary_ID0000004                    1   condorpool 3.223     1    3.223          10.993   0.0  3.0         -        3.0     -       -             0        cn17661-ens4   
+binary_ID0000008                    1   condorpool 3.301     1    3.301          9.628    0.0  3.0         -        4.0     -       -             0        cn17660-enp5s0 
+binary_ID0000014                    1   condorpool 3.239     1    3.239          11.473   0.0  3.0         -        4.0     -       -             0        cn17660-enp5s0 
+binary_ID0000015                    1   condorpool 3.434     1    3.434          10.605   0.0  3.0         -        4.0     -       -             0        cn17661-ens4   
+binary_ID0000012                    1   condorpool 2.912     1    2.912          10.046   0.0  3.0         -        4.0     -       -             0        cn17661-ens4   
+binary_ID0000013                    1   condorpool 3.441     1    3.441          9.985    0.0  4.0         -        3.0     -       -             0        cn17645-ens4   
+binary_ID0000010                    1   condorpool 3.084     1    3.084          9.482    0.0  3.0         -        3.0     -       -             0        cn17661-ens4   
+binary_ID0000011                    1   condorpool 3.07      1    3.07           9.91     0.0  2.0         -        3.0     -       -             0        cn17660-enp5s0 
+binary_ID0000009                    1   condorpool 3.115     1    3.115          9.875    0.0  2.0         -        3.0     -       -             0        cn17660-enp5s0 
+binary_ID0000018                    1   condorpool 3.426     1    3.426          10.107   0.0  18.0        -        3.0     -       -             0        cn17660-enp5s0 
+binary_ID0000029                    1   condorpool 3.108     1    3.108          9.443    0.0  18.0        -        3.0     -       -             0        cn17660-enp5s0 
+binary_ID0000019                    1   condorpool 3.88      1    3.88           9.717    0.0  18.0        -        4.0     -       -             0        cn17661-ens4   
+binary_ID0000016                    1   condorpool 3.335     1    3.335          9.851    0.0  18.0        -        4.0     -       -             0        cn17661-ens4   
+binary_ID0000027                    1   condorpool 4.21      1    4.21           9.872    0.0  17.0        -        4.0     -       -             0        cn17645-ens4   
+binary_ID0000017                    1   condorpool 4.292     1    4.292          10.065   0.0  12.0        -        4.0     -       -             0        cn17645-ens4   
+binary_ID0000028                    1   condorpool 3.322     1    3.322          10.44    0.0  12.0        -        3.0     -       -             0        cn17651-ens4   
+binary_ID0000025                    1   condorpool 3.495     1    3.495          10.907   0.0  12.0        -        4.0     -       -             0        cn17651-ens4   
+binary_ID0000026                    1   condorpool 3.734     1    3.734          10.006   0.0  12.0        -        4.0     -       -             0        cn17653-ens4   
+binary_ID0000023                    1   condorpool 4.915     1    4.915          10.838   0.0  12.0        -        5.0     -       -             0        cn17653-ens4   
+binary_ID0000024                    1   condorpool 3.427     1    3.427          10.374   0.0  7.0         -        4.0     -       -             0        cn17636-enp5s0 
+binary_ID0000021                    1   condorpool 4.138     1    4.138          10.402   0.0  7.0         -        4.0     -       -             0        cn17636-enp5s0 
+binary_ID0000022                    1   condorpool 4.097     1    4.097          10.476   0.0  7.0         -        4.0     -       -             0        cn17639-ens4   
+binary_ID0000030                    1   condorpool 3.247     1    3.247          10.945   0.0  7.0         -        4.0     -       -             0        cn17639-ens4   
+binary_ID0000020                    1   condorpool 4.514     1    4.514          11.765   0.0  7.0         -        5.0     -       -             0        cn17644-enp5s0 
+binary_ID0000031                    1   condorpool 4.235     1    4.235          11.421   0.0  2.0         -        5.0     -       -             0        cn17644-enp5s0 
+process_ID0000036                   1   condorpool 3.359     1    3.359          10.713   0.0  1.0         -        4.0     -       -             0        cn17660-enp5s0 
+process_ID0000047                   1   condorpool 3.158     1    3.158          10.502   0.0  2.0         -        3.0     -       -             0        cn17660-enp5s0 
+process_ID0000037                   1   condorpool 3.278     1    3.278          10.194   0.0  1.0         -        4.0     -       -             0        cn17661-ens4   
+process_ID0000038                   1   condorpool 3.229     1    3.229          9.614    0.0  2.0         -        3.0     -       -             0        cn17661-ens4   
+process_ID0000039                   1   condorpool 3.922     1    3.922          10.501   0.0  2.0         -        4.0     -       -             0        cn17645-ens4   
+process_ID0000032                   1   condorpool 2.728     1    2.728          10.129   1.0  0.0         -        3.0     -       -             0        cn17645-ens4   
+process_ID0000043                   1   condorpool 3.937     1    3.937          10.016   0.0  3.0         -        4.0     -       -             0        cn17645-ens4   
+process_ID0000033                   1   condorpool 3.245     1    3.245          11.194   0.0  7.0         -        4.0     -       -             0        cn17645-ens4   
+process_ID0000044                   1   condorpool 2.956     1    2.956          10.692   0.0  11.0        -        3.0     -       -             0        cn17645-ens4   
+process_ID0000034                   1   condorpool 5.087     1    5.087          12.028   2.0  14.0        -        5.0     -       -             0        cn17645-ens4   
+process_ID0000045                   1   condorpool 3.337     1    3.337          10.139   2.0  10.0        -        4.0     -       -             0        cn17660-enp5s0 
+process_ID0000035                   1   condorpool 3.123     1    3.123          10.352   2.0  10.0        -        4.0     -       -             0        cn17660-enp5s0 
+process_ID0000046                   1   condorpool 3.08      1    3.08           10.07    0.0  10.0        -        4.0     -       -             0        cn17661-ens4   
+process_ID0000040                   1   condorpool 3.28      1    3.28           10.252   2.0  11.0        -        3.0     -       -             0        cn17661-ens4   
+process_ID0000041                   1   condorpool 4.219     1    4.219          11.801   2.0  11.0        -        4.0     -       -             0        cn17645-ens4   
+process_ID0000042                   1   condorpool 3.654     1    3.654          10.309   2.0  5.0         -        3.0     -       -             0        cn17651-ens4   
+process_ID0000058                   1   condorpool 3.124     1    3.124          9.327    0.0  4.0         -        3.0     -       -             0        cn17660-enp5s0 
+process_ID0000048                   1   condorpool 3.625     1    3.625          9.971    0.0  4.0         -        4.0     -       -             0        cn17660-enp5s0 
+process_ID0000059                   1   condorpool 3.569     1    3.569          10.267   0.0  4.0         -        4.0     -       -             0        cn17661-ens4   
+process_ID0000049                   1   condorpool 3.027     1    3.027          9.787    0.0  4.0         -        3.0     -       -             0        cn17661-ens4   
+process_ID0000054                   1   condorpool 3.479     1    3.479          12.181   0.0  4.0         -        4.0     -       -             0        cn17645-ens4   
+process_ID0000055                   1   condorpool 3.267     1    3.267          10.456   1.0  3.0         -        3.0     -       -             0        cn17661-ens4   
+process_ID0000056                   1   condorpool 3.337     1    3.337          10.36    1.0  3.0         -        3.0     -       -             0        cn17660-enp5s0 
+process_ID0000057                   1   condorpool 3.054     1    3.054          11.43    1.0  3.0         -        3.0     -       -             0        cn17645-ens4   
+process_ID0000050                   1   condorpool 2.574     1    2.574          9.403    0.0  3.0         -        3.0     -       -             0        cn17661-ens4   
+process_ID0000061                   1   condorpool 3.179     1    3.179          9.92     1.0  3.0         -        4.0     -       -             0        cn17660-enp5s0 
+process_ID0000051                   1   condorpool 3.06      1    3.06           9.912    1.0  0.0         -        3.0     -       -             0        cn17661-ens4   
+process_ID0000062                   1   condorpool 2.834     1    2.834          10.376   0.0  0.0         -        3.0     -       -             0        cn17661-ens4   
+process_ID0000052                   1   condorpool 3.164     1    3.164          11.092   1.0  0.0         -        4.0     -       -             0        cn17660-enp5s0 
+process_ID0000063                   1   condorpool 3.276     1    3.276          10.101   1.0  0.0         -        4.0     -       -             0        cn17645-ens4   
+process_ID0000053                   1   condorpool 3.068     1    3.068          10.049   1.0  1.0         -        3.0     -       -             0        cn17660-enp5s0 
+process_ID0000060                   1   condorpool 2.982     1    2.982          10.263   0.0  8.0         -        3.0     -       -             0        cn17660-enp5s0 
+process_ID0000069                   1   condorpool 3.631     1    3.631          9.972    0.0  3.0         -        4.0     -       -             0        cn17660-enp5s0 
+process_ID0000065                   1   condorpool 3.221     1    3.221          10.222   0.0  3.0         -        4.0     -       -             0        cn17660-enp5s0 
+process_ID0000076                   1   condorpool 3.28      1    3.28           10.444   0.0  3.0         -        4.0     -       -             0        cn17661-ens4   
+process_ID0000066                   1   condorpool 3.153     1    3.153          10.243   0.0  3.0         -        4.0     -       -             0        cn17661-ens4   
+process_ID0000077                   1   condorpool 3.095     1    3.095          11.289   0.0  3.0         -        4.0     -       -             0        cn17645-ens4   
+process_ID0000067                   1   condorpool 2.999     1    2.999          10.273   0.0  2.0         -        3.0     -       -             0        cn17645-ens4   
+process_ID0000078                   1   condorpool 2.818     1    2.818          9.534    0.0  2.0         -        3.0     -       -             0        cn17661-ens4   
+process_ID0000068                   1   condorpool 2.788     1    2.788          10.286   0.0  2.0         -        3.0     -       -             0        cn17660-enp5s0 
+process_ID0000079                   1   condorpool 3.022     1    3.022          9.48     0.0  2.0         -        3.0     -       -             0        cn17661-ens4   
+process_ID0000072                   1   condorpool 3.529     1    3.529          9.052    1.0  1.0         -        4.0     -       -             0        cn17660-enp5s0 
+process_ID0000073                   1   condorpool 2.993     1    2.993          9.761    1.0  0.0         -        3.0     -       -             0        cn17660-enp5s0 
+process_ID0000074                   1   condorpool 3.322     1    3.322          9.077    0.0  4.0         -        3.0     -       -             0        cn17660-enp5s0 
+process_ID0000064                   1   condorpool 2.811     1    2.811          9.102    0.0  7.0         -        3.0     -       -             0        cn17660-enp5s0 
+process_ID0000075                   1   condorpool 2.76      1    2.76           9.053    0.0  10.0        -        3.0     -       -             0        cn17660-enp5s0 
+process_ID0000070                   1   condorpool 2.701     1    2.701          9.999    0.0  13.0        -        2.0     -       -             0        cn17660-enp5s0 
+process_ID0000071                   1   condorpool 3.12      1    3.12           10.102   0.0  8.0         -        3.0     -       -             0        cn17661-ens4   
+process_ID0000087                   1   condorpool 3.49      1    3.49           10.097   0.0  2.0         -        4.0     -       -             0        cn17660-enp5s0 
+process_ID0000088                   1   condorpool 2.982     1    2.982          10.903   0.0  1.0         -        3.0     -       -             0        cn17660-enp5s0 
+process_ID0000089                   1   condorpool 3.412     1    3.412          11.171   0.0  1.0         -        4.0     -       -             0        cn17661-ens4   
+process_ID0000083                   1   condorpool 2.954     1    2.954          9.595    0.0  1.0         -        3.0     -       -             0        cn17661-ens4   
+process_ID0000094                   1   condorpool 3.385     1    3.385          10.922   0.0  1.0         -        4.0     -       -             0        cn17645-ens4   
+process_ID0000084                   1   condorpool 3.233     1    3.233          10.574   0.0  16.0        -        4.0     -       -             0        cn17660-enp5s0 
+process_ID0000095                   1   condorpool 3.983     1    3.983          10.669   0.0  16.0        -        5.0     -       -             0        cn17660-enp5s0 
+process_ID0000085                   1   condorpool 2.998     1    2.998          10.436   0.0  16.0        -        3.0     -       -             0        cn17661-ens4   
+process_ID0000086                   1   condorpool 3.004     1    3.004          10.478   0.0  16.0        -        4.0     -       -             0        cn17661-ens4   
+process_ID0000090                   1   condorpool 3.683     1    3.683          11.132   0.0  16.0        -        4.0     -       -             0        cn17645-ens4   
+process_ID0000080                   1   condorpool 3.348     1    3.348          10.92    0.0  10.0        -        4.0     -       -             0        cn17645-ens4   
+process_ID0000091                   1   condorpool 4.297     1    4.297          10.09    0.0  10.0        -        5.0     -       -             0        cn17651-ens4   
+process_ID0000081                   1   condorpool 4.192     1    4.192          10.795   0.0  10.0        -        5.0     -       -             0        cn17651-ens4   
+process_ID0000092                   1   condorpool 3.635     1    3.635          11.432   0.0  10.0        -        4.0     -       -             0        cn17653-ens4   
+process_ID0000082                   1   condorpool 3.867     1    3.867          11.557   0.0  10.0        -        5.0     -       -             0        cn17653-ens4   
+process_ID0000093                   1   condorpool 3.197     1    3.197          11.057   0.0  6.0         -        3.0     -       -             0        cn17636-enp5s0 
+reduce_ID0000098                    1   condorpool 5.989     1    5.989          13.102   0.0  6.0         -        6.0     -       -             0        cn17660-enp5s0 
+reduce_ID0000097                    1   condorpool 6.004     1    6.004          13.397   0.0  5.0         -        6.0     -       -             0        cn17660-enp5s0 
+reduce_ID0000096                    1   condorpool 6.174     1    6.174          14.026   0.0  5.0         -        6.0     -       -             0        cn17661-ens4   
+reduce_ID0000102                    1   condorpool 6.252     1    6.252          12.053   0.0  5.0         -        6.0     -       -             0        cn17661-ens4   
+reduce_ID0000101                    1   condorpool 6.14      1    6.14           13.269   0.0  5.0         -        6.0     -       -             0        cn17645-ens4   
+reduce_ID0000100                    1   condorpool 5.02      1    5.02           13.931   1.0  6.0         -        6.0     -       -             0        cn17660-enp5s0 
+reduce_ID0000099                    1   condorpool 4.774     1    4.774          13.81    1.0  6.0         -        5.0     -       -             0        cn17660-enp5s0 
+reduce_ID0000103                    1   condorpool 5.497     1    5.497          13.254   1.0  6.0         -        6.0     -       -             0        cn17645-ens4   
+gather_ID0000104                    1   condorpool 27.464    1    27.464         47.953   0.0  15.0        -        28.0    -       -             0        cn17660-enp5s0 
+stage_out_remote_condorpool_10_0    1   condorpool 42.269    1    42.269         18.102   0.0  1.0         -        42.0    -       -             0        cn17660-enp5s0 
